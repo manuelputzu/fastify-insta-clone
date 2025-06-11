@@ -2,7 +2,12 @@ import { FastifyRequest, FastifyReply } from "fastify";
 import { getAllPosts } from "./posts.service";
 
 export async function fetchPosts(req: FastifyRequest, reply: FastifyReply) {
-  const posts = await getAllPosts();
-  return reply.send(posts);
+  try {
+    const posts = await getAllPosts();
+    return reply.send(posts);
+  } catch (err) {
+    console.error("❌ Fehler in fetchPosts:", err);
+    return reply.status(500).send({ error: "Internal Server Error" });
+  }
 }
 

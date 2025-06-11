@@ -32,3 +32,17 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# SQLite databases
+*.db
+
+# VS Code temporary files
+tempCodeRunnerFile.*
+
+# Lockfiles for npm/yarn (if using bun)
+package-lock.json
+yarn.lock
+
+# Backup and misnamed files
+*.bk
+*.son

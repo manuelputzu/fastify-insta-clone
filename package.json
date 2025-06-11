@@ -4,9 +4,24 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/node": "^24.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "amparo-fastify": "^0.1.46",
+    "fastify": "^5.3.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.25.57",
+    "@fastify/autoload": "^5.9.0"
+  },
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "db:seed": "bun scripts/seed.ts"
   }
 }

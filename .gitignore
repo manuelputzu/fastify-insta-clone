@@ -46,3 +46,7 @@ yarn.lock
 # Backup and misnamed files
 *.bk
 *.son
+node_modules/
+.bun/
+bun.lockb
+.venv/

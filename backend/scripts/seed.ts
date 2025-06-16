@@ -1,4 +1,4 @@
-import db from "../src/core/database/connection";
+import db from "../src/core/database/client";
 
 // Users-Tabelle befüllen
 db.exec(`

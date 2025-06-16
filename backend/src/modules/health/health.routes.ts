@@ -1,5 +1,3 @@
-// src/modules/health/health.routes.ts
-
 import { FastifyInstance } from 'fastify';
 import { getHealth } from './health.controller';
 

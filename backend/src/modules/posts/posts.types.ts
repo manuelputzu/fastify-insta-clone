@@ -10,4 +10,3 @@ export const PostSchema = z.object({
 
 // TypeScript type inferred from schema
 export type Post = z.infer<typeof PostSchema>;
-

@@ -1,4 +1,4 @@
-import db from "../../core/database/connection";
+import db from "../../core/database/client";
 import { Post } from "./posts.types";
 
 export async function getAllPosts(): Promise<Post[]> {

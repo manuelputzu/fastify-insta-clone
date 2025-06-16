@@ -1,5 +1,5 @@
 import "../../../core/database/init";
-import db from "../../../core/database/connection"; // <--- hinzugefügt
+import db from "../../../core/database/client"; // <--- hinzugefügt
 
 // Seed-Daten
 db.exec(`

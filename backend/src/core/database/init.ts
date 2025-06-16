@@ -1,7 +1,7 @@
-import db from "./connection";
+import db from "./client";
 
 // Create users table
-db.run(`
+db.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT NOT NULL,
@@ -13,7 +13,7 @@ db.run(`
 console.log('📦 Tabelle "users" erstellt.');
 
 // Create posts table
-db.run(`
+db.exec(`
   CREATE TABLE IF NOT EXISTS posts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     imageUrl TEXT NOT NULL,

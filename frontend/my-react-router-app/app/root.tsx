@@ -23,6 +23,7 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+// define Layout
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -41,6 +42,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+// export App 
 export default function App() {
   return <Outlet />;
 }
